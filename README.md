@@ -28,6 +28,7 @@ cd C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin
 makecert -r -pe -n "CN=CertName" -b 01/01/2015 -e 01/01/2039 -eku 1.3.6.1.5.5.7.3.3 -sky signature -a sha256 -len 2048 -ss my -sr LocalMachine
 
 https://brockallen.com/2015/06/01/makecert-and-creating-ssl-or-signing-certificates/
+http://amilspage.com/signing-certificates-idsv4/
 
 makecert -n "CN=IdentityServerCN" -a sha256 -sv IdentityServer4Auth.pvk -r IdentityServer4Auth.cer
 pvk2pfx -pvk IdentityServer4Auth.pvk -spc IdentityServer4Auth.cer -po -pfx IdentityServer4Auth.pfx
